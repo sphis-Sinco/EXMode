@@ -1,0 +1,28 @@
+import funkin.modding.module.Module;
+import funkin.play.PlayState;
+
+import funkin.play.scoring.Scoring;
+import funkin.play.ResultState.ResultsStateParams;
+
+class RankBadges extends Module
+{
+        override public function new()
+        {
+                super('RankBadges');
+        }
+
+        /**
+         * Initalize the sprite
+         */
+        override public function onSongStart(event:ScriptEvent) {}
+
+        /**
+         * Update the sprite
+         */
+        override public function onStepHit(event:SongTimeScriptEvent) {}
+
+        /**
+         * Remove the sprite
+         */
+        public function onGameOver(event:ScriptEvent) {}
+}
