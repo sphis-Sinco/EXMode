@@ -1,55 +1,141 @@
 import funkin.modding.module.Module;
 import funkin.play.PlayState;
-
+import funkin.Highscore;
 import funkin.play.scoring.Scoring;
 // import funkin.play.ResultState.ResultsStateParams;
-
 import flixel.FlxSprite;
 
-class RankBadges extends Module
-{
-        override public function new()
-        {
-                super('RankBadges');
-        }
+class RankBadges extends Module {
+	public function new() {
+		super('RankBadges');
+	}
 
-        public var badge:FlxSprite;
+	public var badge:FlxSprite;
+	public var scoreRank:ScoringRank;
 
-        /**
-         * Initalize the sprite
-         */
-        override public function onCountdownStart(event:CountdownScriptEvent) {
-                badge = new FlxSprite();
-                badge.frames = Paths.getSparrowAtlas('freeplay/rankbadges');
-                
-                badge.scrollFactor.set();
-                badge.scale.set(2,2);
+	/**
+	 * Initalize
+	 */
+	public function onCountdownStart(event:CountdownScriptEvent) {
+		badge = new FlxSprite();
+		badge.frames = Paths.getSparrowAtlas('freeplay/rankbadges');
 
-                badge.screenCenter();
-                badge.y = PlayState.instance.playerStrumline.members[0].y + badge.height + 32;
-                badge.x -= badge.width;
+		badge.scrollFactor.set();
+		badge.scale.set(2, 2);
 
-                badge.cameras =[PlayState.instance.camHUD];
+		badge.screenCenter();
+		badge.y = PlayState.instance.playerStrumline.members[0].y + badge.height + 32;
+		badge.x -= badge.width;
 
-                PlayState.instance.add(badge);
+		badge.cameras = [PlayState.instance.camHUD];
 
-                badge.animation.addByPrefix('PERFECT', 'PERFECT rank0', 24, false);
-                badge.animation.addByPrefix('EXCELLENT', 'EXCELLENT rank0', 24, false);
-                badge.animation.addByPrefix('GOOD', 'GOOD rank0', 24, false);
-                badge.animation.addByPrefix('PERFECTSICK', 'PERFECT rank GOLD', 24, false);
-                badge.animation.addByPrefix('GREAT', 'GREAT rank0', 24, false);
-                badge.animation.addByPrefix('LOSS', 'LOSS rank0', 24, false);
+		PlayState.instance.add(badge);
 
-                badge.animation.play('LOSS');
-        }
+		badge.animation.addByPrefix('PERFECT', 'PERFECT rank0', 24, false);
+		badge.animation.addByPrefix('EXCELLENT', 'EXCELLENT rank0', 24, false);
+		badge.animation.addByPrefix('GOOD', 'GOOD rank0', 24, false);
+		badge.animation.addByPrefix('PERFECTSICK', 'PERFECT rank GOLD', 24, false);
+		badge.animation.addByPrefix('GREAT', 'GREAT rank0', 24, false);
+		badge.animation.addByPrefix('LOSS', 'LOSS rank0', 24, false);
 
-        /**
-         * Update the sprite
-         */
-        override public function onStepHit(event:SongTimeScriptEvent) {}
+		badge.animation.play('LOSS');
 
-        /**
-         * Remove the sprite
-         */
-        public function onGameOver(event:ScriptEvent) {}
+                sick = 0;
+                good = 0;
+                bad = 0;
+                shit = 0;
+                missed = 0;
+                combo = 0;
+                maxCombo = 0;
+                totalNotesHit = 0;
+                totalNotes = 0;
+	}
+
+	public var scoreRankToBadge:Map<String, String> = [
+		'SHIT' => 'LOSS',
+		'GOOD' => 'GOOD',
+		'GREAT' => 'GREAT',
+		'EXCELLENT' => 'EXCELLENT',
+		'PERFECT' => 'PERFECT',
+		'PERFECT_GOLD' => 'PERFECTSICK',
+	];
+
+	public var sick:Int = 0;
+	public var good:Int = 0;
+	public var bad:Int = 0;
+	public var shit:Int = 0;
+	public var missed:Int = 0;
+	public var combo:Int = 0;
+	public var maxCombo:Int = 0;
+	public var totalNotesHit:Int = 0;
+	public var totalNotes:Int = 0;
+
+	/**
+	 * Update
+	 */
+	var yes:Bool = false;
+
+	public function onStateChangeEnd(event:StateChangeScriptEvent) {
+		yes = false;
+
+		if (Std.isOfType(event.targetState, PlayState)) {
+			yes = true;
+		}
+	}
+
+	public function onBeatHit(event:SongTimeScriptEvent) {
+		if (!yes)
+			return;
+
+		scoreRank = Scoring.calculateRank({
+			score: PlayState.instance.songScore,
+			tallies: {
+				sick: sick,
+				good: good,
+				bad: bad,
+				shit: shit,
+				missed: missed,
+				combo: combo,
+				maxCombo: maxCombo,
+				totalNotesHit: totalNotesHit,
+				totalNotes: totalNotes,
+			}
+		});
+		trace(scoreRank);
+
+		badge.animation.play(scoreRankToBadge.get(scoreRank));
+	}
+
+	public function onNoteIncoming(event:NoteScriptEvent) {
+		totalNotes++;
+	}
+
+	public function onNoteHit(event:HitNoteScriptEvent) {
+		trace(event.judgement);
+
+		if (event.judgement != 'miss') {
+                        combo++;
+                        totalNotesHit++;
+                } else {
+                        missed++;
+                        combo = 0;
+                }
+
+                if (combo > maxCombo) maxCombo = combo;
+
+		if (event.judgement == 'sick' || event.judgement == 'perfect') {
+			sick++;
+		} else if (event.judgement == 'good') {
+			good++;
+		} else if (event.judgement == 'bad') {
+			bad++;
+		} else if (event.judgement == 'shit') {
+			shit++;
+		}
+	}
+
+	/**
+	 * Remove
+	 */
+	public function onGameOver(event:ScriptEvent) {}
 }
