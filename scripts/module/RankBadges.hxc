@@ -2,7 +2,9 @@ import funkin.modding.module.Module;
 import funkin.play.PlayState;
 
 import funkin.play.scoring.Scoring;
-import funkin.play.ResultState.ResultsStateParams;
+// import funkin.play.ResultState.ResultsStateParams;
+
+import flixel.FlxSprite;
 
 class RankBadges extends Module
 {
@@ -11,10 +13,23 @@ class RankBadges extends Module
                 super('RankBadges');
         }
 
+        public var badge:FlxSprite;
+
         /**
          * Initalize the sprite
          */
-        override public function onSongStart(event:ScriptEvent) {}
+        override public function onCountdownStart(event:CountdownScriptEvent) {
+                badge = new FlxSprite();
+                badge.frames = Paths.getSparrowAtlas('freeplay/rankbadges');
+                PlayState.instance.add(badge);
+
+                badge.animation.addByPrefix('PERFECT', 'PERFECT rank0', 24, false);
+                badge.animation.addByPrefix('EXCELLENT', 'EXCELLENT rank0', 24, false);
+                badge.animation.addByPrefix('GOOD', 'GOOD rank0', 24, false);
+                badge.animation.addByPrefix('PERFECTSICK', 'PERFECT rank GOLD', 24, false);
+                badge.animation.addByPrefix('GREAT', 'GREAT rank0', 24, false);
+                badge.animation.addByPrefix('LOSS', 'LOSS rank0', 24, false);
+        }
 
         /**
          * Update the sprite
