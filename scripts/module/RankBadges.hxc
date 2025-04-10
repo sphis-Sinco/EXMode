@@ -106,10 +106,14 @@ class RankBadges extends Module {
 		badge.animation.play(scoreRankToBadge.get(scoreRank));
 	}
 
+        public function onNoteIncoming(event:NoteScriptEvent) {
+                if (event.note.getStrumlineIndex(4) == 0)
+                        totalNotes++;
+	}
+
 	public function onNoteHit(event:HitNoteScriptEvent) {
 		trace(event.judgement);
 
-                totalNotes++;
 		if (event.judgement != 'miss') {
                         combo++;
                         totalNotesHit++;
