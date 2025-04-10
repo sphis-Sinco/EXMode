@@ -21,11 +21,16 @@ class RankBadges extends Module
         override public function onCountdownStart(event:CountdownScriptEvent) {
                 badge = new FlxSprite();
                 badge.frames = Paths.getSparrowAtlas('freeplay/rankbadges');
+                
                 badge.scrollFactor.set();
                 badge.scale.set(2,2);
+
                 badge.screenCenter();
-                badge.y = PlayState.instance.playerStrumline.members[0].y;
+                badge.y = PlayState.instance.playerStrumline.members[0].y + badge.height + 32;
+                badge.x -= badge.width;
+
                 badge.cameras =[PlayState.instance.camHUD];
+
                 PlayState.instance.add(badge);
 
                 badge.animation.addByPrefix('PERFECT', 'PERFECT rank0', 24, false);
