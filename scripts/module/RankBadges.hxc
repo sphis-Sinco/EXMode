@@ -79,7 +79,7 @@ class RankBadges extends Module {
 		yes = false;
 
 		if (Std.isOfType(event.targetState, PlayState)) {
-			yes = true;
+			// yes = true;
 		}
 	}
 
