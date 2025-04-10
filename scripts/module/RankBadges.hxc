@@ -30,6 +30,8 @@ class RankBadges extends Module
                 badge.animation.addByPrefix('PERFECTSICK', 'PERFECT rank GOLD', 24, false);
                 badge.animation.addByPrefix('GREAT', 'GREAT rank0', 24, false);
                 badge.animation.addByPrefix('LOSS', 'LOSS rank0', 24, false);
+
+                badge.animation.play('LOSS');
         }
 
         /**
