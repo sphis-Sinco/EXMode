@@ -1,0 +1,16 @@
+import funkin.modding.module.Module;
+import funkin.play.PlayState;
+
+class EXMode extends Module
+{
+        override public function new()
+        {
+                super('EXMode');
+        }
+
+        override public function onNoteMiss(event:NoteScriptEvent)
+        {
+                trace('EXtreme Mode');
+                PlayState.instance.health = 0;
+        }
+}
