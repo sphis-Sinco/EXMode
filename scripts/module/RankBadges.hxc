@@ -22,6 +22,8 @@ class RankBadges extends Module
                 badge = new FlxSprite();
                 badge.frames = Paths.getSparrowAtlas('freeplay/rankbadges');
                 badge.scrollFactor.set();
+                badge.scale.set(2,2);
+                badge.screenCenter();
                 PlayState.instance.add(badge);
 
                 badge.animation.addByPrefix('PERFECT', 'PERFECT rank0', 24, false);
