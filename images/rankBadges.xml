@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rankBadges.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="EXCELLENT rank0000" x="4" y="4" width="22" height="28" frameX="-9" frameY="-7" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="EXCELLENT rank0001" x="4" y="4" width="22" height="28" frameX="-9" frameY="-7" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="EXCELLENT rank0002" x="4" y="4" width="22" height="28" frameX="-9" frameY="-7" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="EXCELLENT rank0003" x="4" y="4" width="22" height="28" frameX="-9" frameY="-7" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="EXCELLENT rank0004" x="4" y="4" width="22" height="28" frameX="-9" frameY="-7" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="EXCELLENT rank0005" x="34" y="4" width="40" height="50"/>
+	<SubTexture name="EXCELLENT rank0006" x="34" y="4" width="40" height="50"/>
+	<SubTexture name="EXCELLENT rank0007" x="82" y="4" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="EXCELLENT rank0008" x="82" y="4" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="EXCELLENT rank0009" x="82" y="4" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="EXCELLENT rank0010" x="82" y="4" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="EXCELLENT rank0011" x="82" y="4" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="EXCELLENT rank0012" x="82" y="4" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="EXCELLENT rank0013" x="82" y="4" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="50"/>
+	<SubTexture name="GOOD rank0000" x="121" y="4" width="27" height="28" frameX="-9" frameY="-7" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GOOD rank0001" x="121" y="4" width="27" height="28" frameX="-9" frameY="-7" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GOOD rank0002" x="121" y="4" width="27" height="28" frameX="-9" frameY="-7" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GOOD rank0003" x="121" y="4" width="27" height="28" frameX="-9" frameY="-7" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GOOD rank0004" x="156" y="4" width="44" height="50"/>
+	<SubTexture name="GOOD rank0005" x="156" y="4" width="44" height="50"/>
+	<SubTexture name="GOOD rank0006" x="208" y="4" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GOOD rank0007" x="208" y="4" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GOOD rank0008" x="208" y="4" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GOOD rank0009" x="208" y="4" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GOOD rank0010" x="208" y="4" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GOOD rank0011" x="208" y="4" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GOOD rank0012" x="208" y="4" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GREAT rank0000" x="4" y="62" width="27" height="28" frameX="-9" frameY="-7" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GREAT rank0001" x="4" y="62" width="27" height="28" frameX="-9" frameY="-7" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GREAT rank0002" x="4" y="62" width="27" height="28" frameX="-9" frameY="-7" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GREAT rank0003" x="4" y="62" width="27" height="28" frameX="-9" frameY="-7" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GREAT rank0004" x="39" y="62" width="44" height="50"/>
+	<SubTexture name="GREAT rank0005" x="39" y="62" width="44" height="50"/>
+	<SubTexture name="GREAT rank0006" x="91" y="62" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GREAT rank0007" x="91" y="62" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GREAT rank0008" x="91" y="62" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GREAT rank0009" x="91" y="62" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GREAT rank0010" x="91" y="62" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GREAT rank0011" x="91" y="62" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="GREAT rank0012" x="91" y="62" width="35" height="38" frameX="-5" frameY="-4" frameWidth="44" frameHeight="50"/>
+	<SubTexture name="LOSS rank0000" x="134" y="62" width="22" height="29" frameX="-9" frameY="-10" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0001" x="134" y="62" width="22" height="29" frameX="-9" frameY="-10" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0002" x="134" y="62" width="22" height="29" frameX="-9" frameY="-10" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0003" x="164" y="62" width="40" height="46"/>
+	<SubTexture name="LOSS rank0004" x="164" y="62" width="40" height="46"/>
+	<SubTexture name="LOSS rank0005" x="164" y="62" width="40" height="46"/>
+	<SubTexture name="LOSS rank0006" x="164" y="62" width="40" height="46"/>
+	<SubTexture name="LOSS rank0007" x="212" y="62" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0008" x="212" y="62" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0009" x="212" y="62" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0010" x="212" y="62" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0011" x="212" y="62" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0012" x="212" y="62" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0013" x="212" y="62" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0014" x="212" y="62" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0015" x="212" y="62" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="LOSS rank0016" x="212" y="62" width="31" height="38" frameX="-5" frameY="-4" frameWidth="40" frameHeight="46"/>
+	<SubTexture name="PERFECT rank0000" x="4" y="120" width="26" height="28" frameX="-13" frameY="-7" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank0001" x="4" y="120" width="26" height="28" frameX="-13" frameY="-7" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank0002" x="4" y="120" width="26" height="28" frameX="-13" frameY="-7" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank0003" x="4" y="120" width="26" height="28" frameX="-13" frameY="-7" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank0004" x="38" y="120" width="52" height="54"/>
+	<SubTexture name="PERFECT rank0005" x="38" y="120" width="52" height="54"/>
+	<SubTexture name="PERFECT rank0006" x="98" y="120" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank0007" x="98" y="120" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank0008" x="98" y="120" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank0009" x="98" y="120" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank0010" x="98" y="120" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank0011" x="98" y="120" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank0012" x="98" y="120" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank0013" x="142" y="120" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0000" x="186" y="120" width="26" height="28" frameX="-13" frameY="-7" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0001" x="186" y="120" width="26" height="28" frameX="-13" frameY="-7" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0002" x="186" y="120" width="26" height="28" frameX="-13" frameY="-7" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0003" x="186" y="120" width="26" height="28" frameX="-13" frameY="-7" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0004" x="4" y="182" width="52" height="54"/>
+	<SubTexture name="PERFECT rank GOLD0005" x="4" y="182" width="52" height="54"/>
+	<SubTexture name="PERFECT rank GOLD0006" x="64" y="182" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0007" x="64" y="182" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0008" x="64" y="182" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0009" x="64" y="182" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0010" x="64" y="182" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0011" x="64" y="182" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0012" x="64" y="182" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+	<SubTexture name="PERFECT rank GOLD0013" x="64" y="182" width="36" height="38" frameX="-8" frameY="-4" frameWidth="52" frameHeight="54"/>
+</TextureAtlas>
